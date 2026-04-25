@@ -1,4 +1,4 @@
-# 🖥️ Project 14: IBM LSF (Load Sharing Facility) Cluster Setup and Job Scheduling
+# 🖥️ Project: IBM LSF (Load Sharing Facility) Cluster Setup and Job Scheduling
 
 ![LSF](https://img.shields.io/badge/IBM-Spectrum_LSF-blue?style=for-the-badge&logo=ibm)
 ![RHEL](https://img.shields.io/badge/OS-RHEL_7%2F8-red?style=for-the-badge&logo=redhat)
