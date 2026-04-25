@@ -1,4 +1,4 @@
-# 🖥️ Project: IBM LSF (Load Sharing Facility) Cluster Setup and Job Scheduling
+# Project: IBM LSF (Load Sharing Facility) Cluster Setup and Job Scheduling
 
 ![LSF](https://img.shields.io/badge/IBM-Spectrum_LSF-blue?style=for-the-badge&logo=ibm)
 ![RHEL](https://img.shields.io/badge/OS-RHEL_7%2F8-red?style=for-the-badge&logo=redhat)
@@ -7,7 +7,7 @@
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 1. [Project Overview](#project-overview)
 2. [Architecture Design](#architecture-design)
@@ -27,7 +27,7 @@
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 | Field | Details |
 |---|---|
@@ -40,7 +40,7 @@
 
 ---
 
-## 🏗️ Architecture Design
+## Architecture Design
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -79,7 +79,7 @@ Daemon Roles:
 
 ---
 
-## 🖥️ Environment & Prerequisites
+## Environment & Prerequisites
 
 ### Node Details
 
@@ -102,7 +102,7 @@ Daemon Roles:
 
 ---
 
-## 📦 Step 1 — Pre-Installation Setup
+## Step 1 — Pre-Installation Setup
 
 > **Perform on ALL nodes (master + workers)**
 
@@ -249,7 +249,7 @@ timedatectl status
 
 ---
 
-## 🔧 Step 2 — Install LSF on Master Node
+## Step 2 — Install LSF on Master Node
 
 ### 2.1 — Prepare Installation Package
 
@@ -344,7 +344,7 @@ echo "source /shared/lsf/conf/profile.lsf" >> /home/lsfadmin/.bashrc
 
 ---
 
-## 🔧 Step 3 — Install LSF on Worker Nodes
+## Step 3 — Install LSF on Worker Nodes
 
 ### 3.1 — Add Workers to Cluster (Run on Master)
 
@@ -390,7 +390,7 @@ done
 
 ---
 
-## ⚙️ Step 4 — Configure LSF Cluster
+## Step 4 — Configure LSF Cluster
 
 ### 4.1 — Configure lsf.conf (Main Config)
 
@@ -545,7 +545,7 @@ End Host
 
 ---
 
-## 📂 Step 5 — Queue Configuration
+## Step 5 — Queue Configuration
 
 ### 5.1 — Configure lsb.queues (Queue Definitions)
 
@@ -664,7 +664,7 @@ End Queue
 
 ---
 
-## 👥 Step 6 — User Policies & Resource Allocation
+## Step 6 — User Policies & Resource Allocation
 
 ### 6.1 — Configure lsb.users (User Groups & Limits)
 
@@ -732,7 +732,7 @@ End Limit
 
 ---
 
-## ▶️ Step 7 — Start & Verify the Cluster
+## Step 7 — Start & Verify the Cluster
 
 ### 7.1 — Start LSF Daemons (Master Node)
 
@@ -811,7 +811,7 @@ bhosts
 
 ---
 
-## 📤 Step 8 — Job Submission & Monitoring
+## Step 8 — Job Submission & Monitoring
 
 ### 8.1 — Basic Job Submission
 
@@ -926,7 +926,7 @@ bsub < /home/lsfuser/scripts/compute.sh
 
 ---
 
-## 📊 Step 9 — Monitoring & Logging
+## Step 9 — Monitoring & Logging
 
 ### 9.1 — Cluster-Wide Monitoring
 
@@ -1000,7 +1000,7 @@ lsadmin resrestart all
 
 ---
 
-## 🔧 Step 10 — Troubleshooting
+## Step 10 — Troubleshooting
 
 ### 10.1 — Common Issues & Solutions
 
@@ -1166,7 +1166,7 @@ lsadmin reconfig check            # Validate base config (dry run)
 
 ---
 
-## 📜 Bash Automation Scripts
+## Bash Automation Scripts
 
 ### Script 1 — Cluster Health Check
 
@@ -1372,7 +1372,7 @@ END {
 
 ---
 
-## 📈 Impact & Results
+## Impact & Results
 
 | Metric | Before LSF | After LSF | Improvement |
 |---|---|---|---|
@@ -1394,7 +1394,7 @@ END {
 
 ---
 
-## 📚 Key Concepts Demonstrated
+## Key Concepts Demonstrated
 
 | Concept | Implementation |
 |---|---|
@@ -1409,7 +1409,7 @@ END {
 
 ---
 
-## 🔗 References
+## References
 
 - [IBM Spectrum LSF Documentation](https://www.ibm.com/docs/en/spectrum-lsf)
 - [LSF Command Reference](https://www.ibm.com/docs/en/spectrum-lsf/10.1.0?topic=reference-command)
